@@ -1,0 +1,1466 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #fdfaec;
+    font-size: 1em;
+    
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 4%;
+    color: #010101;
+
+}
+
+
+h3 {
+    font-size: 1em;
+}
+h4 {
+    color: black;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    font-size: 1em;
+}
+
+/*BARRE DE NAVIGATION-----------------------------------------*/
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    -webkit-box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.75);
+}
+
+.navbar {
+    background-color: #da4545;
+    list-style-type: none;
+    width: 100%;
+
+}
+
+.navbar-corail{
+background-color: #da4545;
+
+}
+
+nav ul {
+    color: #010101;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    padding: 1%;
+
+}
+
+
+.hvr-underline-from-center {
+    padding-bottom: 6%;
+}
+
+
+/* Underline From Center */
+
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+    color: #010101;
+    text-decoration: none;
+    font-size: 1.3vw;
+}
+
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #00cccc;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    text-decoration: none;
+}
+
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
+.hvr-underline-from-center:hover{
+
+    color:#010101;
+}
+
+/*PRESENTATION--------------------------------------------------*/
+
+#container {
+    margin-top: 10em;
+    width: 80%;
+    height: 40em;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-image: url('images/abs.jpg');
+    color: #010101;
+    -webkit-box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+    -moz-box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+    box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+
+}
+#moi{
+
+  padding-top: 5em;
+}
+
+#moi img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 12em;
+    height: auto;
+    box-shadow: 10px 10px 5px 0px rgba(130,113,113,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(130,113,113,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(130,113,113,0.75);
+    border: 5px double #cfbcb9;
+    
+}
+
+#titre p {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    /* font-weight: bold; */
+    font-size: 1.2em;
+
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    /*font-size: 30px;*/
+    font-size: 2.5em;
+}
+
+
+
+
+/*COMPETENCES TECHNIQUES ET GENERALES-------------------------------*/
+
+#container2 {
+    margin-top: 4%;
+    width: 80%;
+    height: 40em;
+    background-color: #f1edd9;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+    -moz-box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+    box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+
+}
+
+#competences1 {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#competences1 p {
+    font-size: 1.2em;
+}
+
+.progress-bar {
+    background-color: #1a1a1a;
+    height: 2em;
+    padding: 5px;
+    width: 12em;
+    margin: 20px auto 10px auto;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+    color: black;
+}
+
+
+.progress-bar span {
+    display: inline-block;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    transition: width .4s ease-in-out;
+    color: #fff;
+    padding-left: 1em;
+}
+
+.blue span {
+    background-color: #34c2e3;
+}
+
+.orange span {
+    background-color: #ffa366;
+    background-image: linear-gradient(top, #ffa366, #ff6600);
+}
+
+.green span {
+    background-color: #1f3bd8;
+    background-image: linear-gradient(top, #1f3bd8, #4ca916);
+}
+
+.yellow span {
+    background-color: #ffff66;
+    background-image: linear-gradient(top, #ffff66, #ffe680);
+}
+
+.red span {
+    background-color: #da4545;
+    background-image: linear-gradient(top, #da4545, #cc0000);
+}
+
+.violet span {
+    background-color: #e066ff;
+    background-image: linear-gradient(top, #e066ff, #e580ff);
+}
+.dark span{
+    background-color: #2874a6;
+    background-image: linear-gradient(top, #2874a6, #1f1f7f);
+    
+}
+
+.stripes span {
+    background-size: 30px 30px;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+    transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+    transparent 75%, transparent);
+
+    animation: animate-stripes 3s linear infinite;
+}
+
+@keyframes animate-stripes {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 60px 0;
+    }
+}
+
+#competences2 {
+    width: 100%;
+    margin-top: -2rem;
+
+}
+
+#square {
+    display: flex;
+
+}
+
+#competences2 ul {
+    padding-left: 7em;!important
+    padding-top: 5%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#competences2 .cg {
+    font-size: 1.2em;
+    text-align: center;
+
+
+}
+
+#cg2 {
+    padding-top: 2%;
+}
+
+
+/*FORMATION DIPLOMES--------------------------------------*/
+
+#container3 {
+    margin: 6% auto 50px;
+    width: 80%;
+    height: 45em;
+    background-color: #f1edd9;
+    padding-top: 2em;
+    -webkit-box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+    -moz-box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+    box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+}
+
+#formation {
+    height: 10em;
+    display: flex;
+    justify-content: center;
+}
+
+#formation .placement {
+    width: 15%;
+    height: 60%;
+}
+
+
+
+/*Liste de formations*/
+
+#listeform {
+    /*height: 40vw;*/
+    width: 90%;
+    margin: 0 auto;
+}
+
+#list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+#listeform .form {
+    width: 15em;
+    height: 22em;
+    background-color: #fff;
+    border: 1px solid grey;
+    -webkit-box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+    -moz-box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+    box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+
+
+}
+
+#listeform .form p {
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 5%;
+    word-break: normal;
+    text-align: center;
+}
+
+.form img {
+    display: block;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+logoS {
+    text-decoration: none;
+    color: black;
+}
+
+#logoS:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+
+
+
+
+/*EXPERIENCE PROFESSIONNELLE------TIMELINE-----------------------------*/
+
+#container4 {
+
+    margin-top: 5%;
+    width: 80%;
+    height: auto;
+    background-color: #f1edd9;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    -webkit-box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+    -moz-box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+    bottomox-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+}
+
+#container4 h2 {
+
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    color: #010101;
+}
+
+#container4 p {
+    padding-top: 1.5em;
+}
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #da4545;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+
+.left {
+    left: -25.5%;
+}
+
+/* Place the container to the right */
+
+.right {
+    left: 25.5%;
+}
+
+/* Add arrows to the left container (pointing right) */
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/*PORTFOLIO SITES -------------------------------------------------*/
+
+#portfolio {
+    margin: 5% auto;
+    width: 80%;
+    min-height: 45em;
+    background-color: #f1edd9;
+    -webkit-box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+    -moz-box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+    box-shadow: 2px 2px 10px 5px rgba(89, 84, 89, 1);
+
+}
+
+/*#slideshow {
+    display: flex;
+    
+}*/
+
+#slideshow ul {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#slideshow .liens {
+    text-align: center;
+    width: 40%;
+    padding-top: 4%;
+    margin: 0 2em;
+    
+}
+
+.liens img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: none;
+    padding: 0px;
+}    
+
+.liens p {
+    font-size: 1.5em;
+    color: #010101;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    
+}
+
+
+
+
+/*FOOTER CONTACT-----------------------------------------------*/
+
+#contact ul {
+    background-color: #da4545;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+#contact ul li {
+    align-items: center;
+    padding-left: 10px;
+    padding-left: 10px;
+    
+
+
+}
+
+#contact .footer img {
+    border: none;
+    padding: 0px;
+    width: 3em;
+    height: 3em;
+}
+
+/* ICONES DU FOOTER Pulse Grow */
+
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@keyframes hvr-pulse-grow {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+}
+
+.hvr-pulse-grow:hover,
+.hvr-pulse-grow:focus,
+.hvr-pulse-grow:active {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+/* Buzz */
+
+@-webkit-keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+@keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+.hvr-buzz {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+}
+
+.hvr-buzz:hover,
+.hvr-buzz:focus,
+.hvr-buzz:active {
+    -webkit-animation-name: hvr-buzz;
+    animation-name: hvr-buzz;
+    -webkit-animation-duration: 0.15s;
+    animation-duration: 0.15s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myrotate {
+    0% {
+        transform: rotate(0deg); //rotation de 0 degrés au début de l'animation
+    }
+    100% {
+        transform: rotate(-359deg); //rotation de 359 degré à la fin de l'animation
+    }
+}
+
+.rotate:hover {
+    animation: myrotate 3s infinite linear; //attribue l'animation nommée "myrotate" à la classe "rotate" au passage de la souris. L'animation dure 1.5 secondes et se répète indéfiniment, avec un déroulement linéraire.
+}
+
+.rotate {
+    cursor: pointer; //affiche un curseur en forme de main sur l'image lors du passage de la souris (facultatif)
+}
+
+/*RESPONSIVE SITE---------------------------------------------------*/
+
+/*SMARTPHONES-------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+body{
+        background: none;
+    }
+h1 {
+        font-size: 1.4em;
+}
+
+ h2 {
+        font-size: 1.2em;
+        text-align: center;
+        padding-top: 3%;
+        color: #010101;
+        font-weight: bold;
+}
+
+h3 {
+    font-size: 2em;
+}
+h4 {
+    color: black;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    font-size: 1em;
+}
+nav ul {
+    color: #fff;
+    padding: 1.5%;
+       
+}
+
+li {
+    display: inline;
+    
+}
+
+li.nav-item{
+
+   height: 2rem;
+}
+
+#hamburger{
+    height: auto;
+}
+
+.navbar li a{
+font-size: 0.4em;
+margin-top: 1rem; 
+
+}
+.navbar.navbar-expand-lg.col-xl-9.offset-xl-3{
+    padding-bottom: 2.5rem;
+    padding-top: 1rem; 
+}
+.hvr-underline-from-center {
+    padding-bottom: 2%;
+
+}
+
+/*PRESENTATION*/
+
+#container {
+    margin-top: 4em;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+}
+nav ul {
+    color: #fff;
+    padding: 2%;
+    text-align: center;
+    font-size: 3em;
+}
+/*COMPETENCES */
+#container2 {
+    width: 100%;
+    height: 85rem;
+    padding-top: 2rem;
+    
+}
+/*STRIPES*/
+#competences1 {
+    width: 100%;
+    padding: 0;
+    display: block;
+    padding-bottom: 2rem;
+    border-bottom: 1px dotted black;
+    border-width: 80%;
+    
+}
+#competences1 p {
+    font-size: 1em;
+    padding-left: 1em;
+
+}
+#square {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/*COMPETENCES GENERALES*/
+#competences2 ul {
+    padding-left: 12vw;
+    
+}
+
+#competences2 .cg {
+    font-size: 1.2em;
+    text-align: left;
+}
+/*FORMATION*/
+#container3 {
+    width: 100%;
+    height: 110em;
+    background-color: #4d4dff;
+    padding-top: 2em;
+
+}
+#formation {
+    height: 6em;
+    justify-content: flex-start;
+    padding-left: 4em;
+    
+}
+#formation .placement {
+    width: 80%;!important
+    height: 60%;
+}
+
+.placement h2{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#list {
+    display: flex;
+    padding-left: 1em;
+    
+}
+#listeform {
+    width: 90%;
+    
+}
+#listeform .form {
+    width: 15em;
+    height: 22em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+
+  /*EXPERIENCE PRO*/
+
+  #container4 {
+
+    margin-top: 5%;
+    width: 100%;
+    height: auto;    
+}
+
+.content h3 {
+
+    font-size: 1em;
+}
+.timeline {
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+}
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline::after {
+  display: none;
+}
+
+/* Container around content */
+
+.container {
+    width:100%;
+}
+
+/* The circles on the timeline */
+
+.container::after {
+    display: none;
+    
+}
+
+/* Place the container to the left */
+
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+
+.right {
+    left: 0;
+    
+}
+
+
+/*PORTFOLIO-----------------------------------*/
+#portfolio {
+    width: 100%;
+    height: auto;
+    
+}
+#slideshow ul {
+    width: 100%;
+    margin-left: 0;
+}
+#slideshow .liens {
+    text-align: center;
+    width: 90%;
+    padding-top: 4%;
+    margin-top: 1em;
+    margin-left: 0;
+}
+
+.liens p {
+    font-size: 1.2em;
+    color: #010101;
+    padding-bottom: 0;
+}
+.liens img{
+    margin-left: 0;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+}
+.liens img:hover{
+    display: none;
+}
+/*FOOTER---------------------*/
+
+  #contact ul {
+    background-color: #da4545;
+    color: #fff;
+    display:block;
+    justify-content: center;
+    font-size: 1.3em;
+
+
+}
+
+#contact ul li {
+    align-items: center;
+    padding: 10px;
+
+}
+
+#contact .footer img {
+    border: none;
+    padding: 0px;
+    width: 2em;
+    height: 2em;
+} 
+#formulaire, #cv, #top{
+    display: none;
+} 
+
+#contact li p{
+
+    font-size: 1rem;!important
+}
+
+}
+/* TABLETS I PAD ------------------------------------------------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+.navbar li a{
+font-size: 1.2em;
+
+}
+h1{
+    font-size: 2em;
+}
+li.nav-item{
+
+   height: 2rem;
+}
+
+#hamburger{
+    height: auto;
+}
+
+
+.navbar.navbar-expand-lg.col-xl-9.offset-xl-3{
+    padding-bottom: 2.5rem;
+    padding-top: 1rem; 
+}
+.hvr-underline-from-center {
+    padding-bottom: 1%;
+
+}
+PRESENTATION
+
+#container {
+    margin-top: 2em;
+    width: 80%;
+    height: auto;
+    font-size: 1em;
+    padding-bottom: 2rem;
+}
+#moi{
+
+  padding-top: 2em;
+}
+#container2 {
+    width: 80%;
+    height: auto;
+    
+}
+#competences1 {
+    width: 80%;
+    padding-left: 2em;
+    padding-bottom: 2rem;
+
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+#competences1 p{
+    text-align: center;
+}
+#competences2{
+
+   padding-top: 3rem;   
+   
+}
+ul#square {
+    display: flex;
+    flex-wrap: wrap;
+   padding-left: 4rem;
+
+}
+ul#square>li.cg{
+padding-right: 1rem;
+}
+#container3 {
+    width: 80%;
+    height: 55em;
+    background-color: #f1edd9;
+    padding-top: 2em;
+    text-align: center;
+
+}
+#formation .placement {
+    width: 80%;
+    height: 60%;
+}
+#formation {
+    height: 4em;
+    justify-content: flex-start;
+    padding-left: 5em;
+    margin-bottom: 2em;
+    
+}
+/* expérience professionnelle */ 
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #da4545;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+
+.left {
+    left:-25.5%;
+}
+
+/* Place the container to the right */
+
+.right {
+    left: 25.5%;
+}
+
+/* Add arrows to the left container (pointing right) */
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+
+#container4{
+
+    font-size: 0.8em;!important
+}
+#list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+#list .form{
+
+    margin-bottom: 1em;
+}
+#portfolio {
+    width: 80%;
+    height: auto;
+    
+}
+#slideshow ul {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#slideshow .liens {
+    text-align: center;
+    width: 80%;
+    padding-top: 4%;
+    margin-top: 1em;
+
+}
+
+.liens p {
+    font-size: 1.2em;
+    color: #010101;
+    padding-bottom: 0;
+}
+.liens img{
+    margin-left: 0;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+}
+.liens img:hover{
+    display: none;
+}
+#formulaire, #cv, #top{
+    display: none;
+} 
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) and (max-width: 1389px) {
+
+#container {
+    margin-top: 9em;
+    width: 80%;
+    height: 40em;
+}
+#competences2 .cg {
+    font-size: 1.1em;
+    text-align: center;
+
+}
+#container3 {
+    width: 80%;
+    height: 65em;
+    background-color: #4d4dff;
+    padding-top: 2em;
+
+}
+#list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+#list .form{
+
+    margin-bottom: 2em;
+}
+.form:last-child{
+    align-self: center;
+}
+#portfolio{
+    width: 80%;
+    height: 80em;
+    
+}
+.timeline {
+    position: relative;
+    max-width: 1500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #da4545;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+
+.left {
+    left:0;
+}
+
+/* Place the container to the right */
+
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+
+}
+
+
+
+/*essais*/
+.hvrbox,
+.hvrbox * {
+    box-sizing: border-box;
+}
+.hvrbox {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+.hvrbox img {
+    max-width: 100%;
+}
+.hvrbox_background {
+    width: 400px;
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.hvrbox .hvrbox-layer_bottom {
+    display: block;
+}
+.hvrbox .hvrbox-layer_top {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+    opacity: 1;
+}
+.hvrbox .hvrbox-text {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text img{
+    width: 50%;
+    height: 50%;
+
+}
+.hvrbox .hvrbox-layer_image {
+    padding: 0;
+    background: none;
+}
+
+.hvrbox .hvrbox-layer_slidedown {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.hvrbox:hover .hvrbox-layer_slidedown,
+.hvrbox.active .hvrbox-layer_slidedown {
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}

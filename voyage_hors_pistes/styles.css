@@ -1,0 +1,390 @@
+/*GENERAL--------------------------*/
+
+#conteneur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    background: #3d5c5c;
+    margin: 0;
+    padding: 0;
+}
+
+#conteneur > * {
+    /* signifie que je selctionne tout avec l'étoile  et le > signifie que le conteneur est le parent (child-selector)*/
+    flex: 1 100%;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-size: 1.5vw;
+    margin-bottom: 5vw;
+}
+
+/* 1vw signifie 1viewport width = 1% de taille de la fenêtre  */
+
+/* HEADER ------------------------*/
+
+.header {
+    background-image: url(https://media.discordapp.net/attachments/415203308349816832/416256743212056576/header.jpg);
+    background-repeat: no-repeat;
+    height: 30%;
+    background-size: cover;
+}
+
+h1 {
+    color: #FFCC00;
+    font-size: 6vw;
+    text-align: center;
+    width: 100%;
+    margin-top: 10vw;
+    font-family: 'Lobster', sans-serif;
+    float: left;
+    text-shadow: 20px 20px 30px #1a1a00;
+    margin-bottom: 10vw;
+}
+
+.logo {
+    float: left;
+    position: absolute;
+    top: 90px;
+    left: 35px;
+    height: 17vw;
+    width: 17vw;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    z-index: 10;
+    box-shadow: 0px 5px 15px black;
+    background-color: #003333;
+
+}
+nav li {
+    display: inline;
+    padding: 0px 50px;
+    /*background-color: #003333;*/
+    font-family: 'Lobster', sans-serif;
+    cursor: pointer;
+    font-size: 1.6vw;
+}
+
+nav li:hover {
+    background-color: #FFCC00;
+    color: black;
+}
+
+nav ul {
+    
+    text-align: center;
+    width: 100%;
+    
+
+}
+
+/*------------presentation--------- */
+
+h2 {
+    text-align: center;
+    font-family: 'Lobster', sans-serif;
+    text-shadow: 3px 2px dimgray;
+    color: #fff;
+    font-size: 3vw;
+    
+}
+
+/*DESTINATION ------------------- */
+p{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    padding: 5px;
+    width: 70%;
+    display: block;
+    margin: auto;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    max-width: 100%;
+    height: auto;
+
+
+}
+
+/* SLIDESHOW-------------------------------*/
+
+#slideshow {
+    height: 35vw;
+    width: 100%;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 7vw;
+
+
+}
+
+#slides {
+    position: relative;
+    height: 35vw;
+    width: 40vw;
+    list-style-type: none;
+    margin: auto;
+}
+
+#slides img {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+    border: 3px double #003333;
+}
+
+#evasion {
+    padding-top: 5vw;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* -FICHES ------------------- */
+
+.fiches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2vw;
+    margin-bottom: 8vw;
+}
+
+.text {
+    font-size: 1vw;
+    overflow/*a voir  */
+}
+
+h3 {
+    font-family: 'Lobster', sans-serif;
+    margin: 10px;
+    font-size: 1.3vw;
+    text-align: center;
+    border: 1px white solid;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0 15px;
+    position: static;
+    /*  ces trois propriétés influent sur le border qui devient proche du texte */
+    border-style: dotted;
+    color: white;
+}
+
+#titre {
+    display: block;
+}
+
+.indo {
+    background-color: rgb(255, 127, 80);
+}
+
+.austr {
+    background-color: rgb(255, 210, 77);
+}
+
+.asi {
+    background-color: rgb(255, 153, 204);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.wiki {
+    color: #003333;
+}
+
+.wiki:hover {
+    color: darkblue;
+}
+
+.indonésie,
+.australie,
+.asie {
+    border: 1px solid grey;
+    background-image: url(images/mountain.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    font-size: 12px;
+    box-shadow: 6px 6px 6px black;
+    border-style: groove;
+    width: 25%;
+}
+
+.indonésie:hover {
+    transition: 0.5s;
+    transform: scale(1.15, 1.15);
+    /* z-index: 1; */
+}
+
+.australie:hover {
+    transition: 0.5s;
+    transform: scale(1.15, 1.15);
+}
+
+.asie:hover {
+    transition: 0.5s;
+    transform: scale(1.15, 1.15);
+}
+
+/*FORMULAIRE -------------------*/
+
+p {
+    padding: 10px;
+}
+
+.echanges {
+    display: flex;
+    text-align: left;
+    text-indent: 1vw;
+    font-family: 'Lobster', sans-serif;
+    margin: auto;
+    margin-bottom: 5vw;
+    padding-top: 7.5vw;
+}
+
+form {
+    margin: auto;
+    width: 70%;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: #003333;
+    color: white;
+    box-shadow: 6px 6px 6px 6px black;
+}
+
+form p {
+    margin-bottom: 0px;
+    font-size: 1.5vw;
+}
+
+label {
+    display: inline-block;
+    width: 9vw;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input,
+textarea {
+    font: 1em sans-serif;
+    width: 90%;
+    margin-left: 1.6vw;
+    height: 2vw;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+#message {
+    height: 8vw;
+}
+
+button {
+    font-weight: bold;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 1.6vw;
+}
+
+button:hover {
+    background-color: teal;
+    transform: perspective(1px) translateZ(0);
+
+}
+
+.commentaire {
+    text-align: center;
+    text-indent: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* css footer ------------- */
+
+.footer {
+    font-family: 'Lobster', sans-serif;
+    color: #FFCC00;
+    background-color: #A6A6A6;
+    text-align: center;
+    background-image: url(https://media.discordapp.net/attachments/415203308349816832/416256743212056576/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 15px 5px 25px black;
+}
+
+.footer h2 {
+    font-size: 3vw;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-shadow: 10px 10px 40px #1a1a00;
+}
+
+/*Liens exterieur */
+
+.reseaux {
+    display: flex;
+    margin-left: 42%;
+    padding-bottom: 1vw;
+}
+
+.rs {
+    height: 4vw;
+    width: 4vw;
+}
+
+/*    fin liens */
+
+.nous {
+    font-size: 1.5vw;
+}
+
+.nous:hover {
+    color: #003333;
+}
+
+.copyright {
+    color: white;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+    font-size: 1vw;
+}

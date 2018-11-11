@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+   
+    font-size: 1em;
+    /* Old browsers */
+    background-image: url('../desert.jpg');
+
+ 
+}
+
+form{
+	margin: auto 20%;
+	font-weight: bold;
+	padding-top: 1.3em;
+	padding-bottom: 2em;
+	border: 2px solid grey;
+	border-radius: 10px;
+	
+	background: rgb(245, 183, 177, 0.5);
+	/* background: rgb(152, 207, 128, 0.5); */
+	
+}
+
+/*formulaire de contact style typing*/
+.typewriter{
+
+	 color: #fff;	
+	 overflow: hidden; /* Ensures the content is not revealed until the animation */
+	 border-right: .15em solid orange; /* The typwriter cursor */
+	 white-space: nowrap; /* Keeps the content on a single line */
+	 margin: 1.2em auto; /* Gives that scrolling effect as the typing happens */
+	 letter-spacing: .15em; /* Adjust as needed */
+	 animation: 
+	 typing 4s steps(40, end),
+	 blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+/*Corps du formulaire*/
+label{
+	padding: 0;
+	display: inline-block;
+	width: 12em;
+}
+
+#email {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 20px;
+	width: 60%;
+	margin: auto;
+	text-align: left;
+}
+#objet, #name, #firstname, #mail, #phone{
+
+	height: 2rem;
+	font-size: 1.2rem;
+}
+
+#message {
+	width: 100%;
+	height: 30%;
+	font-size: 1.2rem;
+}
+.blue{
+	color: #9a1508;
+	font-size: 1.2em;
+
+}
+p{
+margin-top: 1em;
+margin-left: 10em;
+font-size: 0.8em;
+}
+.comments{
+	color: #adff2f;
+	font-weight: bold;
+	margin-left: 10em;
+}
+#bouton{
+	font-size: 1.3em;
+	width: 18em;
+	padding: 0.5rem;
+}
+#bouton:hover{
+	font-size: 1.3em;
+	width: 18em;
+	background-color: #da4545;
+	padding: 0.5rem;
+	
+}
+.thanks{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.5em;
+}
+.requises{
+	margin-left: auto;
+	margin-right: auto;
+
+}

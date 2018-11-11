@@ -2,10 +2,10 @@
 
 class Database
 {
-    private static $dbHost = "db741587726.db.1and1.com";
-    private static $dbName = "db741587726";
-    private static $dbUser = "dbo741587726";
-    private static $dbUserpassword = "V67a96a99!";
+    private static $dbHost = "";
+    private static $dbName = "";
+    private static $dbUser = "";
+    private static $dbUserpassword = "";
     
      private static $connection = null;
     
